@@ -27,18 +27,17 @@ Coastal mangrove forests are exceptionally high-capacity carbon sinks (Blue Carb
 ## 4. Datasets Used
 * **Sentinel-2 L2A (Copernicus / Microsoft Planetary Computer):**
   * **Bands:** Band 4 (Red, 10m resolution) and Band 8 (Near-Infrared, 10m resolution).
-  * **Area of Interest (AOI):** Wadi El Gemal Coastal Zone `[35.03°E, 24.63°N, 35.12°E, 24.72°N]`.
+  * **Area of Interest (AOI):** Wadi El Gemal Coastal Zone [35.03°E, 24.63°N, 35.12°E, 24.72°N].
   * **Processing Level:** Surface Reflectance (L2A), Cloud Cover < 5%.
   * **CRS:** EPSG:32636 (UTM Zone 36N).
 
 ---
 
 ## 5. Technical Approach
-1. **Catalog Query:** Query STAC catalog via `pystac_client` and `planetary_computer` for cloud-free imagery.
-2. **Data Stacking & Reprojection:** Use `stackstac` to stream raster assets into an xarray DataArray aligned with `EPSG:32636` at 10m spatial resolution.
-3. **Spectral Index Calculation:**
-   $$\text{NDVI} = \frac{\text{NIR} - \text{Red}}{\text{NIR} + \text{Red}} = \frac{\text{B08} - \text{B04}}{\text{B08} + \text{B04}}$$
-4. **Visualization & Output Generation:** Generate high-resolution spatial maps isolating high-NDVI vegetation clusters ($0.3 \le \text{NDVI} \le 0.5$) representing mangrove communities.
+1. Catalog Query: Query STAC catalog via pystac_client and planetary_computer for cloud-free imagery.
+2. Data Stacking & Reprojection: Use stackstac to stream raster assets into an xarray DataArray aligned with EPSG:32636 at 10m spatial resolution.
+3. Spectral Index Calculation: NDVI = (NIR - Red) / (NIR + Red)
+4. Visualization & Output Generation: Generate high-resolution spatial maps isolating high-NDVI vegetation clusters (0.3 <= NDVI <= 0.5) representing mangrove communities.
 
 ---
 
@@ -47,36 +46,7 @@ Coastal mangrove forests are exceptionally high-capacity carbon sinks (Blue Carb
 Requires Python 3.10+.
 
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
+git clone [https://github.com/starlettremaa/blue-carbon-monitoring.git](https://github.com/starlettremaa/blue-carbon-monitoring.git)
+cd blue-carbon-monitoring
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-pip install -r requirements.txt.
-
-
-
-
-
-
-
-
-
----
-
-## 7. How to Run
-​Open and run the main Jupyter notebook end-to-end:
-jupyter lab notebooks/05_ecosystem_health_blue_carbon.ipynb
-
-Expected Runtime: ~1-2 minutes on standard environment.
-​Output: Generates results/example_output.png displaying the coastal NDVI health map.
-
-## ​8. Example Output
-Figure 1: Normalized Difference Vegetation Index (NDVI) map for the Wadi El Gemal coastal area, highlighting localized mangrove clusters (green) against the surrounding desert terrain.
-
-## ​9. Results & Limitations
-​Results: Successfully isolated mangrove canopy signatures along the coastline with high spatial fidelity at 10m resolution.
-​Limitations: Multispectral broad bands (10m) provide broad vegetation screening; future phases will integrate fine-resolution Hyperspectral imagery (e.g., Planet Tanager / EnMAP / Satellite 813) to leverage the Red-Edge spectral signatures for biochemical stress detection.
-
-## ​10. Team & Attribution
-​Reham Abdulraouf: Project Architecture, Earth Observation Pipeline Development & Analysis.
-​Organizers & Data Providers: UAE Space Agency, National Space Academy, Space42, Microsoft Planetary Computer, and Copernicus.
+pip install -r requirements.txt
