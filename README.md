@@ -53,21 +53,22 @@ python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
+---
 
-7. How to Run
+## 7. How to Run
 ​Open and run the main Jupyter notebook end-to-end:
 jupyter lab notebooks/05_ecosystem_health_blue_carbon.ipynb
 
 Expected Runtime: ~1-2 minutes on standard environment.
 ​Output: Generates results/example_output.png displaying the coastal NDVI health map.
 
-​8. Example Output
+## ​8. Example Output
 Figure 1: Normalized Difference Vegetation Index (NDVI) map for the Wadi El Gemal coastal area, highlighting localized mangrove clusters (green) against the surrounding desert terrain.
 
-​9. Results & Limitations
+## ​9. Results & Limitations
 ​Results: Successfully isolated mangrove canopy signatures along the coastline with high spatial fidelity at 10m resolution.
 ​Limitations: Multispectral broad bands (10m) provide broad vegetation screening; future phases will integrate fine-resolution Hyperspectral imagery (e.g., Planet Tanager / EnMAP / Satellite 813) to leverage the Red-Edge spectral signatures for biochemical stress detection.
 
-​10. Team & Attribution
+## ​10. Team & Attribution
 ​Reham Abdulraouf: Project Architecture, Earth Observation Pipeline Development & Analysis.
 ​Organizers & Data Providers: UAE Space Agency, National Space Academy, Space42, Microsoft Planetary Computer, and Copernicus.
