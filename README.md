@@ -51,7 +51,7 @@ git clone [https://github.com/your-username/your-repo-name.git](https://github.c
 cd your-repo-name
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r requirements.txt.
 
 ---
 
