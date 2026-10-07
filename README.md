@@ -50,3 +50,9 @@ git clone [https://github.com/starlettremaa/blue-carbon-monitoring.git](https://
 cd blue-carbon-monitoring
 python -m venv .venv
 pip install -r requirements.txt
+
+---
+
+## 6. Installation
+
+
