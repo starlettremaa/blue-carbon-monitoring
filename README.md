@@ -50,9 +50,16 @@ git clone [https://github.com/starlettremaa/blue-carbon-monitoring.git](https://
 cd blue-carbon-monitoring
 python -m venv .venv
 pip install -r requirements.txt
+``` 
 
 ---
 
-## 6. Installation
+7. How to Run
+​Open and run the main Jupyter notebook end-to-end:
 
+```bash
+jupyter lab notebooks/05_ecosystem_health_blue_carbon.ipynb
+``` 
 
+Expected Runtime: ~1-2 minutes on standard environment.
+​Output: Generates example_output.png displaying the coastal NDVI health map.
