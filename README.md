@@ -2,10 +2,10 @@
 
 **Arab Youth Space Hackathon 2026 · 813 Challenge**
 
-**Team Leader:** Reham Abdulraouf · 
-**Country:** Egypt
-**Theme:** Ecosystem Health, Biodiversity & Blue Carbon
-**Repository:** https://github.com/starlettremaa/blue-carbon-monitoring
+- **Team Leader:** Reham Abdulraouf
+- **Country:** Egypt
+- **Theme:** Ecosystem Health, Biodiversity & Blue Carbon
+- **Repository:** https://github.com/starlettremaa/blue-carbon-monitoring
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/starlettremaa/blue-carbon-monitoring/blob/main/notebooks/main_analysis.ipynb)
 
