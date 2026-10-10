@@ -1,0 +1,7 @@
+site,mask,res_m,mask_area_km2,valid_px,median_ndvi_baseline,median_ndvi_recent,median_ndre_baseline,median_ndre_recent,pct_declined_lt_-0.05,pct_declined_lt_-0.10,pct_declined_lt_-0.20,pct_increased_gt_+0.10,change_median,change_mad_sigma
+abu_dhabi,full_mask,20,33.322,83305,0.279,0.34,0.153,0.18,19.0,12.9,6.6,24.7,0.04,0.088
+abu_dhabi,core_mask,20,25.701,64252,0.286,0.355,0.159,0.19,17.1,11.6,5.8,25.3,0.042,0.085
+nabq_egypt_20m,full_mask,20,0.396,987,0.579,0.583,0.345,0.331,9.5,2.8,0.3,12.1,0.011,0.044
+nabq_egypt_20m,core_mask,20,0.26,649,0.599,0.604,0.359,0.341,7.9,2.0,0.0,9.7,0.011,0.04
+nabq_egypt_10m,full_mask,10,0.388,3871,0.578,0.585,0.346,0.334,8.5,2.4,0.2,12.3,0.012,0.043
+nabq_egypt_10m,core_mask,10,0.312,3121,0.59,0.597,0.355,0.34,7.7,1.8,0.0,11.4,0.012,0.04
