@@ -1,0 +1,7 @@
+site,density_case,mangrove_ha,stock_t_C,exposed_t_C_min,exposed_t_C_max
+abu_dhabi,"low  (Red Sea soil only, 1 m)",3332.2,143286,6462,18920
+abu_dhabi,mid  (Qatar tree + soil 1 m),3332.2,201101,9069,26554
+abu_dhabi,high (Qatar mid + 1 SD),3332.2,224726,10135,29674
+nabq_egypt_10m,"low  (Red Sea soil only, 1 m)",38.8,1670,0,103
+nabq_egypt_10m,mid  (Qatar tree + soil 1 m),38.8,2343,0,144
+nabq_egypt_10m,high (Qatar mid + 1 SD),38.8,2619,0,161

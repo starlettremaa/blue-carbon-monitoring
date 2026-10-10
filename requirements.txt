@@ -1,0 +1,13 @@
+# Compatible ranges used while developing in Google Colab.
+# After the final notebook run, REPLACE this file with the exact pins printed by the last notebook cell
+# (also saved as requirements.lock.txt).
+pystac-client>=0.8,<0.9
+planetary-computer>=1.0
+stackstac>=0.5
+rasterio>=1.4
+scipy>=1.11
+numpy>=1.26
+pandas>=2.0
+xarray>=2024.1
+matplotlib>=3.8
+dask>=2024.1
