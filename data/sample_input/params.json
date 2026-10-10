@@ -1,0 +1,31 @@
+{
+  "site": "nabq_egypt_10m",
+  "bbox": [
+    34.41,
+    28.16,
+    34.455,
+    28.21
+  ],
+  "epsg": 32636,
+  "res": 10,
+  "windows": {
+    "baseline": "2019-01-01/2019-03-31",
+    "recent": "2025-01-01/2025-03-31"
+  },
+  "cloud_max": 20,
+  "scl_ok": [
+    4,
+    5,
+    6
+  ],
+  "offset_date": "2022-01-25",
+  "collections": [
+    "sentinel-2-l2a",
+    "esa-worldcover (2021)"
+  ],
+  "scenes_used": [
+    15,
+    15
+  ],
+  "calibrated_threshold": -0.10791551038253389
+}
